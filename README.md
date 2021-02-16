@@ -1,4 +1,4 @@
-# pygrater
+# PyGrater
 ![pygrater logo](/images/logo.png)
 
 _An elegant way to search Google using the cli_  
