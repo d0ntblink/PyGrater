@@ -1,7 +1,7 @@
 # pygrater
 ![pygrater logo][pygrater-logo]
 
-_An elegant way to search Google without searching Google_
+_An elegant way to search Google using the cli_
  
  This tool will take a user input (question) and respond with a Google answer snippet.
  
