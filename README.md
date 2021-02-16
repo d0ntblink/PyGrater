@@ -1,5 +1,5 @@
 # PyGrater
-![pygrater logo](pygrater-logo)
+![pygrater logo][pygrater-logo]
 
 _An elegant way to search Google using the cli_  
 
