@@ -29,4 +29,4 @@ _An elegant way to search Google using the cli_
 
 [answer-link]: https://www.google.ca/search?ei=0RIsYOPKCIbO0PEPkr2f8AM&q=how+tall+is+the+empire+state+building&oq=how+tall+is+the+empire+state+building&gs_lcp=Cgdnd3Mtd2l6EAMyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAOgcIABBHELADOgcIABCwAxBDOhAILhDHARCvARCwAxDIAxBDOgYIABAHEB5KBQg4EgExUOnMK1jkzitglNAraAJwAngCgAHDAYgB8ASSAQMzLjOYAQCgAQGqAQdnd3Mtd2l6yAELwAEB&sclient=gws-wiz&ved=0ahUKEwij9_6QiO_uAhUGJzQIHZLeBz4Q4dUDCAw&uact=5
 [python-version]: https://img.shields.io/badge/Python%20Version-3.7.8-blueviolet?style=flat-square&logo=python&logoColor=white
-[pygrater-logo]: iamges/logo.png
+[pygrater-logo]: /images/logo.png
