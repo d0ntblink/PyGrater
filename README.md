@@ -15,14 +15,17 @@ _An elegant way to search Google using the cli_
  
  ## Gary
  * Logo
+ * Web Queries
  
  
  ## Zach
- * Things and stuff
+ * Web Query Responses
  
 
  ## Michael
  * Things and stuff
+ * Input Paramter(s)
+ * CLI Interaction
  
 
 
