@@ -15,11 +15,11 @@ _An elegant way to search Google using the cli_
  
  ## Gary
  * Logo
- * Web Queries
+ * Web Query Implementation
  
  
  ## Zach
- * Web Query Responses
+ * Web Query Response Parsing
  
 
  ## Michael
