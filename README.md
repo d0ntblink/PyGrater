@@ -11,12 +11,15 @@ _An elegant way to search Google without searching Google_
  
  
  ## Gary
+ * Logo
  
  
  ## Zach
+ * Things and stuff
  
  
  ## Michael
+ * Things and stuff
  
 
 
