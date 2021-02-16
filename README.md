@@ -23,9 +23,8 @@ _An elegant way to search Google using the cli_
  
 
  ## Michael
- * Things and stuff
- * Input Paramter(s)
  * CLI Interaction
+ * Input Paramter(s)
  
 
 
