@@ -1,4 +1,4 @@
-#  https://github.com/d0ntblink/pygrater/
+#  Project Page: https://github.com/d0ntblink/pygrater/
 #  
 #  -------------------------------------------------------  #
 #  PyGrater: An elegant way to search Google using the cli  #
