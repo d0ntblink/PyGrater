@@ -11,7 +11,7 @@ def create_url(question):
 
 
 def get_html(url):
-    user_agent = USER_AGENTS[randrange(len(A))]
+    user_agent = USER_AGENTS[randrange(len(USER_AGENTS))]
     headers = {'user-agent': user_agent}
     html_content = requests.get(url, headers=headers).text
     soup = BeautifulSoup(html_content, "lxml")
