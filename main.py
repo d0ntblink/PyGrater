@@ -9,14 +9,15 @@
 # 
 #  -------------------------------------------------------
 
-import functions
+from string_beautifier import inputCleanser
 from google_page_pull import create_url, get_html
+from response_parser import parser
 
 if __name__ == "__main__":
-    userQuestion = functions.inputCleanser(input('What would you like to ask Google? '))
+    userQuestion = inputCleanser(input('What would you like to ask Google? '))
 
     htmlResponse = get_html(url=create_url(question=userQuestion))
     # print(htmlResponse)  # this is for testing
 
-    googleAnswer = 'LOL'  # obviously replace this with the parsed output
+    googleAnswer = parser(soup=htmlResponse)
     print('Google says: {}'.format(googleAnswer))
