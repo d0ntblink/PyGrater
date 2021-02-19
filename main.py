@@ -10,13 +10,12 @@
 #  -------------------------------------------------------
 
 import functions
-import google_page_pull
-
+from google_page_pull import create_url, get_html
 
 if __name__ == "__main__":
     userQuestion = functions.inputCleanser(input('What would you like to ask Google? '))
 
-    htmlResponse = google_page_pull.pagePull(userQuestion)
+    htmlResponse = get_html(create_url(question=userQuestion))
     # print(htmlResponse)  # this is for testing
 
     googleAnswer = 'LOL'  # obviously replace this with the parsed output
