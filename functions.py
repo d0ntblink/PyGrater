@@ -1,4 +1,6 @@
 
+# input:  a string that has potentially bad characters
+# return: a cleaned (safe) string
 def inputCleanser(dirtyString):
     cleanString = ''
     for c in dirtyString.strip():
@@ -12,7 +14,6 @@ def inputCleanser(dirtyString):
     return cleanString
 
 
-
-
+# don't run this file on its own
 if __name__ == "__main__":
     print('This is not the file you are looking for.')
