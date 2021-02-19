@@ -23,4 +23,15 @@ def get_html(url):
     return soup
 
 
-print(get_html(url=create_url()))
+# Call the Functions
+url = create_url()
+soup = get_html(url)
+
+# Find the answer
+answer = soup.find("div", class_="BNeawe iBp4i AP7Wnd")
+
+#Clean The Answer and Create Conditon for No Answer
+if answer == None:
+  print("Suprise! Google does not know the answer to that question!")
+else:
+  print(answer.text)
