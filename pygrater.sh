@@ -19,7 +19,7 @@ M="\033[1;35m" # Magenta
 C="\033[1;36m" # Cyan
 
 
-[ $# -le 0 ] && echo "PyGrater, an elegant way to search Google using the CLI\n" && help | head -n1 && exit $?
+[ $# -le 0 ] && echo "PyGrater, an elegant way to search Google using the CLI\n" && help && exit $?
 
 for opt in $*
 do
@@ -32,4 +32,4 @@ do
     esac
 done
 
-echo $* | python3 main.py
+echo $* | python3 pygrater.py
