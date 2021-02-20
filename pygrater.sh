@@ -1,0 +1,35 @@
+#!/usr/bin/bash
+
+help () {
+    printf "%bUsage:%b pygrater %b[options]%b %bquery%b\n"  "$G" "$N"  "$Y" "$N"  "$M" "$N"
+    printf "\n"
+    printf "%bOptions:%b\n"                             "$G" "$N"
+    printf "  -h                    Show this help message and exit.\n"
+    printf "  -l                    Enters the looping mode.\n"
+    printf "\n"
+    printf "%bReport issues at%b %bhttps://github.com/d0ntblink/pygrater/issues%b\n"  "$G" "$N"  "$C" "$N"
+}
+
+# color codes
+N="\033[0m"    # Reset
+R="\033[1;31m" # Red
+G="\033[1;32m" # Green
+Y="\033[1;33m" # Yellow
+M="\033[1;35m" # Magenta
+C="\033[1;36m" # Cyan
+
+
+[ $# -le 0 ] && echo "PyGrater, an elegant way to search Google using the CLI\n" && help | head -n1 && exit $?
+
+for opt in $*
+do
+    case $opt in
+    -h)
+        help;;
+    -l)
+        # TODO: add a loop option
+        ;;
+    esac
+done
+
+echo $* | python3 pygrater
