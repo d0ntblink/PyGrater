@@ -32,4 +32,4 @@ do
     esac
 done
 
-echo $* | python3 pygrater
+echo $* | python3 main.py
