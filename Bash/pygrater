@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/sh
 
 help () {
     printf "%bUsage:%b pygrater %b[options]%b %bquery%b\n"  "$G" "$N"  "$Y" "$N"  "$M" "$N"
