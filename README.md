@@ -17,6 +17,7 @@ _An elegant way to search Google using the cli_
  * Logo
  * Web Query Implementation
  * Bash script
+ * Wiki Page
  
  
  ## Zach
