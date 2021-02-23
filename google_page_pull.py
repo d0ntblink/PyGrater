@@ -5,6 +5,7 @@ from requests.api import get
 
 
 def create_url(question):
+    url = question.replace('+','%2b')
     url = question.replace(' ', '+')
     url = 'https://google.com/search?q=' + url
     return url
