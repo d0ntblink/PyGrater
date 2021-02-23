@@ -3,10 +3,17 @@ from bs4 import BeautifulSoup
 
 def parser(soup):
     # Find the answer
-    answer = soup.find("div", class_="BNeawe iBp4i AP7Wnd")
+    answerBasic = soup.find("div", class_="BNeawe iBp4i AP7Wnd")
+    answerAdv = soup.find("div", class_="BNeawe s3v9rd AP7Wnd")
 
     # Clean The Answer and Create Conditon for No Answer
-    if answer == None:
-        return "Suprise! Google does not know the answer to that question!"
+    if (answerBasic and answerAdv) != None:
+        return(answerBasic.text)
+    elif (answerBasic == None) and (answerAdv != None):
+        return(answerAdv.text)
     else:
-        return answer.text
+        return("Google Does Not Know!")
+
+    
+  
+  
