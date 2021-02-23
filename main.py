@@ -18,19 +18,26 @@ from response_parser import parser
 # Output: User's input question
 #   Misc: -h and --help return usage instructions
 def checkArgs(argv):
+    USAGE = 'usage: main.py -i "Your question here."\n' \
+            '       main.py --question "Your question here."\n\n' \
+            'NOTE: Double quotes ("") are required surrounding your question.'
+
     try:
-        opts, args = getopt.getopt(sys.argv[1:], 'hi:', ['help', 'question='])
+        options, arguments = getopt.getopt(
+            argv,                    # Arguments
+            'hi:',                   # Short Options
+            ['help', 'question='])   # Long Options
     except getopt.GetoptError:
-        print('main.py -i "Your question here."')
+        print(USAGE)
         sys.exit(2)
-    for opt, arg in opts:
+    for opt, arg in options:
         if opt in ['-h', '--help']:
-            print('usage: main.py -i "Your question here."')
-            print('       main.py --question "Your question here."')
+            print(USAGE)
             sys.exit()
         elif opt in ['-i', '--question']:
             inlineQuestion = inputCleanser(arg)
             return inlineQuestion
+    _ = arguments  # please stop bugging me about the unused variable
 
 if __name__ == "__main__":
     inlineQuestion = checkArgs(sys.argv[1:])
